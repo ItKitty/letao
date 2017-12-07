@@ -75,6 +75,9 @@ $(function () {
         }
     }).on('success.form.bv', function (e) {
         e.preventDefault();
+
+        // 开启进度条
+        NProgress.start();
         //使用ajax提交逻辑
         $.ajax({
             url: "/employee/employeeLogin",
@@ -83,6 +86,7 @@ $(function () {
             success: function (backDate) {
                 console.log(backDate);
                 if (backDate.success) {
+                    // 因为是在login界面调用的js，所以就相当于是平级跳转
                     window.location = "./index.html";
                 } else {
                     //获取表单校验实例
@@ -94,7 +98,8 @@ $(function () {
                         validator.updateStatus('password', 'INVALID', 'callback');
                     }
                 }
-
+                //关闭进度条
+                NProgress.done();
             },
             error: function (xhr) {
                 console.log(xhr.responseText);
@@ -103,7 +108,7 @@ $(function () {
     });
 
     // 需求3 重置表单
-    $('button[type=reset]').on('click',function(){
+    $('button[type=reset]').on('click', function () {
         //获取表单校验实例
         var validator = $("form").data('bootstrapValidator');
         //重置表单，并且会隐藏所有的错误提示和图标
