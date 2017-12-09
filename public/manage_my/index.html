@@ -1,12 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>后台管理系统--首页</title>
+    <!-- 导入bootstrap的css -->
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
+    <!-- 导入bootstrap插件 -->
+    <link rel="stylesheet" href="./assets/bootstrap-validator/css/bootstrapValidator.min.css">
+    <!-- 导入延时插件 Nprogress -->
+    <link rel="stylesheet" href="./assets/nprogress/nprogress.css">
+    <!-- 导入自己的css -->
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/index.css">
 </head>
+
 <body>
-    <h2>phoenix</h2>
+    <!-- 侧边栏 -->
+    <aside class="ad_aside">
+        <!-- 商标 -->
+        <div class="brand">
+            <a href="index.html">HEIMA</a>
+        </div>
+        <!-- 用户 -->
+        <div class="user">
+            <img src="./images/default.png" alt="">
+            <span>超级管理员</span>
+        </div>
+        <!-- 菜单 -->
+        <div class="menu">
+            <ul>
+                <li class="active">
+                    <a href="javascript:;">
+                        <span class="glyphicon glyphicon-user"></span>&nbsp;用户管理</a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <span class="glyphicon glyphicon-list"></span>&nbsp;分类管理</a>
+                    <ol>
+                        <li>
+                            <a href="javascript:void(0)">一级分类</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">二级分类</a>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <span class="glyphicon glyphicon-tags"></span>&nbsp;商品管理</a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+    <!-- 主体区域 -->
+    <section class="ad_section">
+        <!-- 顶部导航 -->
+        <nav class="ad_nav">
+            <a href="javascript:;" class="pull-left">
+                <span class="glyphicon glyphicon-align-justify"></span>
+            </a>
+            <a href="javascript:;" class="pull-right">
+                <span class="glyphicon glyphicon-log-out"></span>
+            </a>
+        </nav>
+        <!-- bootstrap -->
+        <div class="container-fluid">
+            <!-- 路径导航 -->
+            <ol class="breadcrumb">
+                <li>
+                    <a href="javascript:;">管理系统</a>
+                </li>
+                <li class="active">首页</li>
+            </ol>
+            <!-- 导入echarts -->
+            <div class="picTable pull-left" id="main1"></div>
+            <div class="picTable pull-right" id="main2"></div>
+        </div>
+    </section>
 </body>
+
 </html>
+<!-- 导入jq -->
+<script src="./assets/jquery/jquery.min.js"></script>
+<!-- 导入bootstrap的js -->
+<script src="./assets/bootstrap/js/bootstrap.min.js"></script>
+<!-- 导入echarts -->
+<script src="./assets/echarts/echarts.common.min.js"></script>
+<!-- 导入自己的js -->
+<script src="./js/index.js"></script>
