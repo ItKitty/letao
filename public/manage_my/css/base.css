@@ -112,3 +112,14 @@ img{
     width: 45%;
     height: 400px;
 }
+.ad_section table tbody td{
+    text-align: center;
+}
+.ad_section table thead th{
+    text-align: center;
+}
+
+/* 设置 */
+.md_20{
+    margin-bottom: 20px;
+}
