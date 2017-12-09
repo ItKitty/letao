@@ -7,6 +7,10 @@ body{
     position: absolute;
     background-color: #222d32;
 }
+.ad_aside.close2{
+    display: none;
+    transition: all 0.5s;
+}
 .ad_aside .brand{
     background-color: #367fa9;
     width: 100%;
@@ -71,6 +75,10 @@ body{
 /* 主体 */
 .ad_section{
     padding-left: 180px;
+}
+.ad_section.close1{
+    transition: all 0.5s;
+    padding-left: 0px;
 }
 .ad_section .ad_nav{
     height: 50px;

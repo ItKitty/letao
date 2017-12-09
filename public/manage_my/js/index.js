@@ -69,4 +69,20 @@ $(function () {
     };
     // 使用刚指定的配置项和数据显示图表。
     myChart2.setOption(option2);
+
+    // 需求1 点击边栏隐藏
+    $('.ad_nav span').first().on('click',function(){
+        $('.ad_aside').toggle();
+        // $('.ad_aside').toggleClass('close2');
+        // 卧槽，这个类名不能起常用的，有毒哦
+        $('.ad_section').toggleClass('close1');
+    })
+    // 需求2 点击跳转登录-1
+    $('.ad_nav span').last().on('click',function(){
+        $('.modal-show').modal('show');
+    })
+    // 需求3 点击跳转登录-2
+    $('.modal-show btn.btn-sure').on('click',function(){
+        window.location="./login.html";
+    })
 })
