@@ -82,7 +82,31 @@ $(function () {
         $('.modal-show').modal('show');
     })
     // 需求3 点击跳转登录-2
-    $('.modal-show btn.btn-sure').on('click',function(){
-        window.location="./login.html";
+    $('.modal-show .btn-sure').on('click',function(){
+
+        $('.modal-show').modal('hide');
+        $.ajax({
+            url:'/employee/employeeLogout',
+            success:function(backData){
+                window.location="./login.html";
+            }
+        })
     })
+
+    // 需求4 判断是否登陆
+    $.ajax({
+        url:"/employee/checkRootLogin",
+        success:function(backData){
+            console.log(backData);
+            if(backData.error==400){
+                window.location="./login.html";
+            }
+        }
+    })
+
+    // 需求5 点击侧边栏收起
+    $('.ad_aside .menu ul li:eq(1)>a').on('click',function(){
+        $(this).siblings('ol').slideToggle();
+    })
+
 })
