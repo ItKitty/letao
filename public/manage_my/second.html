@@ -8,6 +8,8 @@
     <title>后台管理系统--首页</title>
     <!-- 导入bootstrap的css -->
     <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
+    <!-- 导入表单验证的css -->
+    <link rel="stylesheet" href="./assets/bootstrap-validator/css/bootstrapValidator.min.css">
     <!-- 导入自己的css -->
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/index.css">
@@ -151,15 +153,20 @@
                                     </li>
                                 </ul>
                             </div>
+                            <!-- 分类ID -->
+                            <input type="text" hidden name="categoryId">
                         </div>
                         <div class="form-group">
-                            <input name="categoryName" autocomplete="off" type="text" class="form-control" id="exampleInputEmail1" placeholder="请输入二级分类的名称">
+                            <!-- 分类名称 -->
+                            <input name="brandName" autocomplete="off" type="text" class="form-control" id="exampleInputEmail1" placeholder="请输入二级分类的名称">
                         </div>
                         <div class="form-group">
                             <div class="fileupload">
                                 <input name="pic1" data-url="/category/addSecondCategoryPic" type="file" class="btn btn-default" id="fileUpload">
                                 <a href="javascript:;" class="btn btn-default">上传图片</a>
                             </div>
+                            <!-- 分类logo -->
+                            <input type="text" hidden name="brandLogo">
                         </div>
                         <div class="form-group">
                             <img src="./images/none.png" width="100" height="100" alt="">
@@ -168,7 +175,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
-                    <button type="submit" form="secondForm" class="btn btn-primary">确认</button>
+                    <button type="submit" form="secondForm" class="btn btn-primary btn-add">确认</button>
                 </div>
             </div>
             <!-- /.modal-content -->
@@ -205,6 +212,8 @@
 <!-- 导入图片上传的js -->
 <script src="./assets/jquery-fileupload/jquery.ui.widget.js"></script>
 <script src="./assets/jquery-fileupload/jquery.fileupload.js"></script>
+<!-- 导入表单验证的js -->
+<script src="./assets/bootstrap-validator/js/bootstrapValidator.min.js"></script>
 <!-- 导入公用的js -->
 <script src="./js/common.js"></script>
 <!-- 导入自己的js -->
