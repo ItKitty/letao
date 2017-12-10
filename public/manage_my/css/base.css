@@ -119,7 +119,13 @@ img{
     text-align: center;
 }
 
-/* 设置 */
+/* 公用类设置 */
 .md_20{
     margin-bottom: 20px;
+}
+#fileUpload{
+    opacity: 0;
+    position: absolute;
+    width: 82px;
+    height: 34px;
 }
