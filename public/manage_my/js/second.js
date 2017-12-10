@@ -79,5 +79,25 @@ $(function () {
         }
     });
 
-    
+    // 点击ul改变
+    $.ajax({
+        url:"/category/queryTopCategoryPaging",
+        data:{
+            page:1,
+            pageSize:256
+        },
+        success:function(backData){
+            $('.dropdown-menu').html("");
+            $.each(backData.rows,function(i,n){
+                var li =$("<li><a href='javascript:;'>"+n.categoryName+"</a></li>");
+                $('.dropdown-menu').append(li);
+            })
+        }
+    })
+
+    $('.dropdown-menu').on('click','a',function(){
+        var value = $(this).html();
+        console.log(value);
+        $('.select-value').html(value);
+    })
 })
