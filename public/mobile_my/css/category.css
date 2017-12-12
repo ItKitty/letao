@@ -4,6 +4,7 @@
 
 .lt_cartLeft {
     flex-basis: 0.9rem;
+    width: 0.9rem;
     height: 100%;
     overflow: hidden;
     position: relative;

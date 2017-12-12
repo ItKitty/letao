@@ -104,7 +104,10 @@ img {
     width: 25%;
     height: 100%;
     text-align: center;
-    padding-top: 0.1rem;
+    /* padding-top: 0.1rem; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .lt_tabBar li a {

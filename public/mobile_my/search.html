@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./css/base.css">
     <!-- 导入自己的css -->
     <link rel="stylesheet" href="./css/search.css">
-    <title>乐淘首页</title>
+    <title>搜索中心</title>
 </head>
 
 <body>
@@ -31,15 +31,26 @@
                 <!-- 上下滚动 -->
                 <div class="mui-scroll-wrapper">
                     <div class="mui-scroll">
-                       <!-- 搜索表单 -->
-                       <div class="lt_search">
-                           <form action="javascript:;">
-                               <input type="search" name="" id="" class="search_input" placeholder="请输入搜索关键字">
-                               <a href="javascript:;" class="btn-search">搜索</a>
-                           </form>
-                       </div>
-                       <!-- 搜索历史 -->
-                       <div class="lt_history"></div>
+                        <!-- 搜索表单 -->
+                        <div class="lt_search">
+                            <form action="javascript:;">
+                                <input type="search" name="" id="" class="search_input" placeholder="请输入搜索关键字">
+                                <a href="javascript:;" class="search_btn">搜索</a>
+                            </form>
+                        </div>
+                        <!-- 搜索历史 -->
+                        <div class="lt_history">
+                            <div class="mui-clearfix">
+                                <span class="mui-pull-left">搜索历史</span>
+                                <span class="mui-pull-right fa fa-trash">清空记录</span>
+                            </div>
+                            <ul>
+                                <li>
+                                    <a href="javascript:;">123</a>
+                                    <span class="mui-icon mui-icon-closeempty"></span>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -49,25 +60,25 @@
             <!-- ul>li*4>a[href='javascript:;']>span.fa.fa-home+p{首页} -->
             <ul class="clearfix">
                 <li>
-                    <a href="javascript:;">
+                    <a href="./index.html">
                         <span class="fa fa-home"></span>
                         <p>首页</p>
                     </a>
                 </li>
                 <li>
-                    <a href="javascript:;">
+                    <a href="./category.html">
                         <span class="fa fa-bars"></span>
                         <p>分类</p>
                     </a>
                 </li>
                 <li>
-                    <a href="javascript:;">
+                    <a href="./shoppingCar.html">
                         <span class="fa fa-shopping-cart"></span>
                         <p>购物车</p>
                     </a>
                 </li>
                 <li>
-                    <a href="javascript:;">
+                    <a href="./userCenter.html">
                         <span class="fa fa-user"></span>
                         <p>会员中心</p>
                     </a>
