@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- 导入字体图标 -->
+    <link rel="stylesheet" href="./assets/fa/css/font-awesome.min.css">
+    <!-- 导入mui的css -->
+    <link rel="stylesheet" href="./assets/mui/css/mui.min.css">
+    <!-- 导入公用的css -->
+    <link rel="stylesheet" href="./css/base.css">
+    <!-- 导入自己的css -->
+    <link rel="stylesheet" href="./css/searchList.css">
+    <title>商品列表</title>
+</head>
+
+<body>
+    <div class="lt_container">
+        <!-- 顶部通栏 -->
+        <header class="lt_topBar">
+            <a href="javascript:history.back()" class="btn-left">
+                <span class="mui-icon mui-icon-arrowleft"></span>
+            </a>
+            <h3>商品列表</h3>
+        </header>
+        <!-- 页面主体 -->
+        <div class="lt_content">
+            <div class="lt_wrapper">
+                <!-- 上下滚动 -->
+                <div class="mui-scroll-wrapper">
+
+                    <div class="mui-pull-top-pocket">
+                        <div class="mui-pull">
+                            <div class="mui-pull-loading mui-icon mui-icon-pulldown"></div>
+                            <div class="mui-pull-caption">下拉可以刷新</div>
+                        </div>
+                    </div>
+                    <div class="mui-scroll">
+                        <!--数据列表-->
+                        <!-- 搜索表单 -->
+                        <div class="lt_search">
+                            <form action="./searchList.html">
+                                <input type="search" name="" id="" class="search_input" placeholder="请输入搜索关键字">
+                                <!-- <a href="javascript:;" class="search_btn">搜索</a> -->
+                                <input type="submit" value="搜索" class="search_btn">
+                            </form>
+                        </div>
+                        <!-- 搜索排序 -->
+                        <div class="lt_order">
+                            <a href="javascript:;" class="active">上架时间<span class="fa fa-angle-down"></span></a>
+                            <a href="javascript:;">价格<span class="fa fa-angle-down"></span></a>
+                            <a href="javascript:;">库存<span class="fa fa-angle-down"></span></a>
+                            <a href="javascript:;">折扣<span class="fa fa-angle-down"></span></a>
+                        </div>
+                        <!-- 搜索列表 -->
+                        <div class="lt_products">
+                            <!-- ul.clearfix>li.item*4>a[href='javascript:;']>img[src="./images/product.jpg"]+span.mui-ellipsis-2.mui-text-left{adidas阿迪达斯 男式 场下休闲篮球鞋S83700 }+(p>span{￥560.00}+del{￥600.00})+button.mui-btn-blue{立即购买} -->
+                            <ul class="clearfix">
+                                <li class="item">
+                                    <a href="javascript:;">
+                                        <img src="./images/product.jpg" alt="">
+                                        <span class="mui-ellipsis-2 mui-text-left">adidas阿迪达斯 男式 场下休闲篮球鞋S83700 </span>
+                                        <p>
+                                            <span>￥560.00</span>
+                                            <del>￥600.00</del>
+                                        </p>
+                                        <button class="mui-btn-blue">立即购买</button>
+                                    </a>
+                                </li>
+                                <li class="item">
+                                    <a href="javascript:;">
+                                        <img src="./images/product.jpg" alt="">
+                                        <span class="mui-ellipsis-2 mui-text-left">adidas阿迪达斯 男式 场下休闲篮球鞋S83700 </span>
+                                        <p>
+                                            <span>￥560.00</span>
+                                            <del>￥600.00</del>
+                                        </p>
+                                        <button class="mui-btn-blue">立即购买</button>
+                                    </a>
+                                </li>
+                                <li class="item">
+                                    <a href="javascript:;">
+                                        <img src="./images/product.jpg" alt="">
+                                        <span class="mui-ellipsis-2 mui-text-left">adidas阿迪达斯 男式 场下休闲篮球鞋S83700 </span>
+                                        <p>
+                                            <span>￥560.00</span>
+                                            <del>￥600.00</del>
+                                        </p>
+                                        <button class="mui-btn-blue">立即购买</button>
+                                    </a>
+                                </li>
+                                <li class="item">
+                                    <a href="javascript:;">
+                                        <img src="./images/product.jpg" alt="">
+                                        <span class="mui-ellipsis-2 mui-text-left">adidas阿迪达斯 男式 场下休闲篮球鞋S83700 </span>
+                                        <p>
+                                            <span>￥560.00</span>
+                                            <del>￥600.00</del>
+                                        </p>
+                                        <button class="mui-btn-blue">立即购买</button>
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </div>
+
+
+                        <div class="mui-pull-bottom-pocket mui-block">
+                            <div class="mui-pull">
+                                <div class="mui-pull-loading mui-icon mui-spinner mui-hidden"></div>
+                                <div class="mui-pull-caption mui-pull-caption-down">上拉显示更多</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mui-scrollbar mui-scrollbar-vertical" style="transition-duration: 500ms; opacity: 0;">
+                        <div class="mui-scrollbar-indicator" style="transition-duration: 0ms; display: block; height: 154px; transform: translate3d(0px, 345px, 0px) translateZ(0px); transition-timing-function: cubic-bezier(0.1, 0.57, 0.1, 1);"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- </div> -->
+        <!-- 底部 -->
+        <footer class="lt_tabBar">
+            <!-- ul>li*4>a[href='javascript:;']>span.fa.fa-home+p{首页} -->
+            <ul class="clearfix">
+                <li>
+                    <a href="./index.html">
+                        <span class="fa fa-home"></span>
+                        <p>首页</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="./category.html">
+                        <span class="fa fa-bars"></span>
+                        <p>分类</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="./shoppingCar.html">
+                        <span class="fa fa-shopping-cart"></span>
+                        <p>购物车</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="./userCenter.html">
+                        <span class="fa fa-user"></span>
+                        <p>会员中心</p>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+</body>
+
+</html>
+<!-- 导入js -->
+<script src="./assets/zepto/zepto.min.js"></script>
+<!-- 导入mui -->
+<script src="./assets/mui/js/mui.min.js"></script>
+<!-- 导入自己的js -->
+<script src="./js/common.js"></script>
+<!-- <script src="./js/search.js"></script> -->

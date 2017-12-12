@@ -1,0 +1,83 @@
+/* 搜索框 */
+
+.lt_search {
+    margin-top: 0.1rem;
+    padding: 0 0.1rem;
+}
+
+.lt_search form {
+    position: relative;
+    display: flex;
+}
+
+.lt_search form .search_input {
+    font-size: 0.12rem;
+    background-color: #fff;
+    border: 0.01rem solid #069;
+    text-align: left;
+    flex: 1;
+    height: 0.34rem;
+}
+
+.lt_search form .search_btn {
+    font-size: 0.12rem;
+    flex-basis: 0.6rem;
+    width: 0.6rem;
+    height: 0.34rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #069;
+    /* text-align: center;
+    line-height: 0.34rem; */
+    color: #fff;
+    border-radius: 0 6px 6px 0;
+    transition: none;
+}
+
+/* 搜索列表 */
+.lt_order{
+    height: 0.3rem;
+    line-height: 0.3rem;
+    background: #eee;
+    padding: 0 0.1rem;
+}
+.lt_order a{
+    font-size: 0.12rem;
+    color: #333;
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+.lt_order a.active{
+    color: darkorange;
+}
+/* 搜索列表 */
+/* 商品 */
+.lt_content .lt_products{
+    padding: 0 0.1rem;
+}
+.lt_content .lt_products li.item{
+    width: 48%;
+    float: left;
+    box-shadow: 0px 0px 5px #ccc;
+    margin-top: 0.1rem;
+    text-align: center;
+    padding: 0.1rem 0.05rem;
+}
+.lt_content .lt_products li.item:nth-child(even){
+    margin-left: 4%;
+}
+.lt_content .lt_products li a{
+    display: block;
+}
+.lt_content .lt_products li a img{
+    width: 100%;
+    margin-bottom: 0.05rem;
+}
+.lt_content .lt_products li a p{
+    font-size: 0.12rem;
+}
+.lt_content .lt_products li a p span:first-of-type{
+    color: red;
+}
