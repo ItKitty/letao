@@ -1,0 +1,57 @@
+.lt_proName {
+    padding: 0.1rem;
+    border-top: 1px solid #ccc;
+}
+
+.lt_price {
+    padding: 0.1rem;
+    border-top: 1px solid #ccc;
+}
+
+.lt_price .price {
+    color: red;
+    font-size: 0.2rem;
+}
+
+.lt_price .oldPrice {
+    text-decoration: line-through;
+    color: #666;
+    font-size: 0.14rem;
+}
+
+.lt_size {
+    padding: 0.1rem;
+    border-top: 1px solid #ccc;
+}
+
+.lt_size span {
+    padding: 5px;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    line-height: 30px;
+    font-size: 12px;
+}
+
+.lt_size span.active {
+    background-color: #069;
+}
+
+.lt_num {
+    padding: 0.1rem;
+    border-top: 1px solid #ccc;
+}
+
+.lt_num .tips {
+    font-size: 0.12rem;
+    color: #666;
+}
+
+.lt_proDesc {
+    padding: 0.1rem;
+    border-top: 1px solid #ccc;
+}
+.lt_cart {
+    height: 0.55rem;
+    background-color: #eee;
+    padding: 0.1rem;
+}

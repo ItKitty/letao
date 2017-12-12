@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- 导入字体图标 -->
+    <link rel="stylesheet" href="./assets/fa/css/font-awesome.min.css">
+    <!-- 导入mui的css -->
+    <link rel="stylesheet" href="./assets/mui/css/mui.min.css">
+    <!-- 导入公用的css -->
+    <link rel="stylesheet" href="./css/base.css">
+    <!-- 导入自己的css -->
+    <link rel="stylesheet" href="./css/product.css">
+    <title>乐淘商场-商品详情</title>
+</head>
+
+<body>
+    <div class="lt_container">
+        <!-- 顶部通栏 -->
+        <header class="lt_topBar">
+            <a href="javascript:history.back()" class="btn-left">
+                <span class="mui-icon mui-icon-arrowleft"></span>
+            </a>
+            <h3>商品详情</h3>
+            <a href="./search.html" class="btn-right">
+                <span class="mui-icon mui-icon-reload"></span>
+            </a>
+        </header>
+        <!-- 页面主体 -->
+        <div class="lt_content">
+            <div class="lt_wrapper">
+                <!-- 上下滚动 -->
+                <div class="mui-scroll-wrapper">
+                    <div class="mui-scroll">
+                        <!--左右轮播-->
+                        <div id="slider" class="mui-slider">
+                            <div class="mui-slider-group mui-slider-loop">
+                                <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+                                <div class="mui-slider-item mui-slider-item-duplicate">
+                                    <a href="#">
+                                        <img src="./images/detail.jpg">
+                                    </a>
+                                </div>
+                                <div class="mui-slider-item mui-slider-item-duplicate">
+                                    <a href="#">
+                                        <img src="./images/detail.jpg">
+                                    </a>
+                                </div>
+                                <div class="mui-slider-item mui-slider-item-duplicate">
+                                    <a href="#">
+                                        <img src="./images/detail.jpg">
+                                    </a>
+                                </div>
+                                <div class="mui-slider-item mui-slider-item-duplicate">
+                                    <a href="#">
+                                        <img src="./images/detail.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="mui-slider-indicator">
+                                <div class="mui-indicator mui-active"></div>
+                                <div class="mui-indicator"></div>
+                            </div>
+                        </div>
+                        <!-- 商品名称 -->
+                        <div class="lt_proName mui-ellipsis-2">
+                            <strong>Sport飓风 Nike Kwazi 休闲运动鞋男 844839-002-001-100-400</strong>
+                        </div>
+                        <!-- 商品价格 -->
+                        <div class="lt_price">
+                            价格：
+                            <span class="price">¥499.1</span>
+                            <span class="oldPrice">¥888.1</span>
+                        </div>
+                        <!-- 商品尺寸 -->
+                        <div class="lt_size">尺码：
+                            <span>30</span>
+                            <span class="active">31</span>
+                            <span>32</span>
+                            <span>33</span>
+                            <span>34</span>
+                            <span>35</span>
+                            <span>36</span>
+                            <span>37</span>
+                            <span>38</span>
+                            <span>39</span>
+
+                            <span>40</span>
+
+                            <span>41</span>
+
+                            <span>42</span>
+
+                            <span>43</span>
+
+                            <span>44</span>
+
+                            <span>45</span>
+
+                            <span>46</span>
+
+                            <span>47</span>
+
+                            <span>48</span>
+
+                            <span>49</span>
+
+                            <span>50</span>
+
+                        </div>
+                        <!-- 商品库存 -->
+                        <div class="lt_num">
+                            <div class="mui-numbox" data-numbox-step='1' data-numbox-min='0' data-numbox-max='9999'>
+                                <!-- "-"按钮，点击可减小当前数值 -->
+                                <button class="mui-btn mui-numbox-btn-minus" type="button">-</button>
+                                <input class="mui-numbox-input" type="number" value="1">
+                                <!-- "+"按钮，点击可增大当前数值 -->
+                                <button class="mui-btn mui-numbox-btn-plus" type="button">+</button>
+                            </div>
+                            <span class="tips">剩余数量：20双</span>
+                        </div>
+                        <!-- 商品描述 -->
+                        <div class="lt_proDesc">
+                            详情：描述
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 底部 -->
+        <footer class="lt_tabBar">
+            <div class="lt_cart">
+                <a href="cart.html" class="mui-btn mui-btn-link">去购物车</a>
+                <div class="mui-pull-right">
+                    <button class="mui-btn mui-btn-danger btn_add_cart">加入购物车</button>
+                    <button class="mui-btn mui-btn-warning">立即购买</button>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
+<!-- 导入js -->
+<script src="./assets/zepto/zepto.min.js"></script>
+<!-- 导入mui -->
+<script src="./assets/mui/js/mui.min.js"></script>
+<!-- 导入自己的js -->
+<script src="./js/common.js"></script>
+<script src="./js/index.js"></script>
