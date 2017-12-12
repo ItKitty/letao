@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- 导入字体图标 -->
+    <link rel="stylesheet" href="./assets/fa/css/font-awesome.min.css">
+    <!-- 导入mui的css -->
+    <link rel="stylesheet" href="./assets/mui/css/mui.min.css">
+    <!-- 导入公用的css -->
+    <link rel="stylesheet" href="./css/base.css">
+    <!-- 导入自己的css -->
+    <link rel="stylesheet" href="./css/search.css">
+    <title>乐淘首页</title>
+</head>
+
+<body>
+    <div class="lt_container">
+        <!-- 顶部通栏 -->
+        <header class="lt_topBar">
+            <a href="javascript:history.back()" class="btn-left">
+                <span class="mui-icon mui-icon-arrowleft"></span>
+            </a>
+            <h3>搜索中心</h3>
+        </header>
+        <!-- 页面主体 -->
+        <div class="lt_content">
+            <div class="lt_wrapper">
+                <!-- 上下滚动 -->
+                <div class="mui-scroll-wrapper">
+                    <div class="mui-scroll">
+                       <!-- 搜索表单 -->
+                       <div class="lt_search">
+                           <form action="javascript:;">
+                               <input type="search" name="" id="" class="search_input" placeholder="请输入搜索关键字">
+                               <a href="javascript:;" class="btn-search">搜索</a>
+                           </form>
+                       </div>
+                       <!-- 搜索历史 -->
+                       <div class="lt_history"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 底部 -->
+        <footer class="lt_tabBar">
+            <!-- ul>li*4>a[href='javascript:;']>span.fa.fa-home+p{首页} -->
+            <ul class="clearfix">
+                <li>
+                    <a href="javascript:;">
+                        <span class="fa fa-home"></span>
+                        <p>首页</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <span class="fa fa-bars"></span>
+                        <p>分类</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <span class="fa fa-shopping-cart"></span>
+                        <p>购物车</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <span class="fa fa-user"></span>
+                        <p>会员中心</p>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+</body>
+
+</html>
+<!-- 导入js -->
+<script src="./assets/zepto/zepto.min.js"></script>
+<!-- 导入mui -->
+<script src="./assets/mui/js/mui.min.js"></script>
+<!-- 导入自己的js -->
+<script src="./js/common.js"></script>
+<!-- <script src="./js/search.js"></script> -->

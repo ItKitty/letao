@@ -21,7 +21,8 @@ $(function () {
     function muiFn() {
         // 滚动mui
         mui('.mui-scroll-wrapper').scroll({
-            deceleration: 0.0005 //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
+            deceleration: 0.0005, //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
+            indicators: false, //是否显示滚动条
         });
         // 自动轮播
         mui(".mui-slider").slider({
