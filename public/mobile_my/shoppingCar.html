@@ -1,12 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <!-- 导入字体图标 -->
+    <link rel="stylesheet" href="./assets/fa/css/font-awesome.min.css">
+    <!-- 导入mui的css -->
+    <link rel="stylesheet" href="./assets/mui/css/mui.min.css">
+    <!-- 导入公用的css -->
+    <link rel="stylesheet" href="./css/base.css">
+    <!-- 导入自己的css -->
+    <link rel="stylesheet" href="./css/shoppingCar.css">
+    <title>乐淘商场-购物车</title>
 </head>
+
 <body>
-    
+    <div class="lt_container">
+        <!-- 顶部通栏 -->
+        <header class="lt_topBar">
+            <a href="javascript:history.back()" class="btn-left">
+                <span class="mui-icon mui-icon-arrowleft"></span>
+            </a>
+            <h3>购物车</h3>
+        </header>
+        <!-- 页面主体 -->
+        <div class="lt_content">
+            <div class="lt_wrapper">
+                <!-- 上下滚动 -->
+                <div class="mui-scroll-wrapper">
+                    <div class="mui-scroll">
+                        <!-- 商品列表 -->
+                        <ul class="mui-table-view">
+                            <li class="mui-table-view-cell mui-media">
+                                <a href="javascript:;">
+                                    <input type="checkbox" class="ck">
+                                    <div class="cart_left">
+                                        <img class="" src="./images/product.jpg">
+                                    </div>
+                                    <div class="cart_right">
+                                        <p class="mui-ellipsis-2 proName">匡威三星标1970s converse复刻 142334c 144757c三星标黑色高帮</p>
+                                        <p class="price_wrap">
+                                            <span class="price">¥499.1</span>
+                                            <span class="oldPrice">¥888.1</span>
+                                            <span class="num">1双</span>
+                                        </p>
+                                        <p class="size">鞋码：50</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="mui-table-view-cell mui-media">
+                                    <a href="javascript:;">
+                                        <input type="checkbox" class="ck">
+                                        <div class="cart_left">
+                                            <img class="" src="./images/product.jpg">
+                                        </div>
+                                        <div class="cart_right">
+                                            <p class="mui-ellipsis-2 proName">匡威三星标1970s converse复刻 142334c 144757c三星标黑色高帮</p>
+                                            <p class="price_wrap">
+                                                <span class="price">¥499.1</span>
+                                                <span class="oldPrice">¥888.1</span>
+                                                <span class="num">1双</span>
+                                            </p>
+                                            <p class="size">鞋码：50</p>
+                                        </div>
+                                    </a>
+                                </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 页面工具 -->
+        <div class="lt_total">
+            <div class="mui-pull-left info">
+                订单总金额：¥
+                <span class="total">00.00</span>
+            </div>
+            <a href="javascript:;" class="mui-pull-right">生成订单</a>
+        </div>
+        <!-- 底部 -->
+        <footer class="lt_tabBar">
+            <!-- ul>li*4>a[href='javascript:;']>span.fa.fa-home+p{首页} -->
+            <ul class="clearfix">
+                <li>
+                    <a href="./index.html">
+                        <span class="fa fa-home"></span>
+                        <p>首页</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="./category.html">
+                        <span class="fa fa-bars"></span>
+                        <p>分类</p>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="./shoppingCar.html">
+                        <span class="fa fa-shopping-cart"></span>
+                        <p>购物车</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="./user.html">
+                        <span class="fa fa-user"></span>
+                        <p>会员中心</p>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </div>
 </body>
+
 </html>
+<!-- 导入js -->
+<script src="./assets/zepto/zepto.min.js"></script>
+<!-- 导入mui -->
+<script src="./assets/mui/js/mui.min.js"></script>
+<!-- 导入自己的js -->
+<script src="./js/common.js"></script>
+<!-- <script src="./js/search.js"></script> -->

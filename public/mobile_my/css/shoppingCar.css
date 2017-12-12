@@ -1,0 +1,68 @@
+/* 商品列表布局 */
+.lt_content ul .ck {
+    position: absolute;
+    bottom: 0.16rem;
+    left: 0.22rem;
+
+}
+
+.lt_content ul .cart_left {
+    width: 0.6rem;
+    height: 0.6rem;
+    float: left;
+}
+
+.lt_content ul .cart_left img {
+    width: 100%;
+    display: block;
+}
+
+.lt_content ul .cart_right {
+    overflow: hidden;
+    padding-left: 0.1rem
+}
+
+.lt_content .cart_right .proName {
+    color: #333;
+    /* height: 0.42rem; */
+}
+
+.lt_content .cart_right .price_wrap {
+    height: 0.3rem;
+    line-height: 0.3rem;
+}
+
+.lt_content .cart_right .price {
+    color: red;
+}
+
+.lt_content .cart_right .oldPrice {
+    text-decoration: line-through;
+    font-size: 0.12rem;
+}
+
+.lt_content .cart_right .num {
+    float: right;
+}
+/* 底部的 总金额 */
+.lt_total{
+    position: absolute;
+    bottom: 0.55rem;
+    width: 100%;
+    height: 0.3rem;
+    line-height: 0.3rem;
+    background-color: #eee;
+    border-top: 1px solid #ccc;
+    font-size: 0.12rem;
+    padding-left: 0.1rem;
+    z-index: 999;
+}
+.lt_total .info {
+    color: red;
+    font-weight: 700;
+}
+.lt_total a {
+    background-color: red;
+    color: #fff;
+    padding: 0 0.15rem;
+}
